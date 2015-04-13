@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elim</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <style type="text/css">
+  	.navbar-default{/*
+  		color: green;
+  		border-bottom: 5px;
+  		border-color: yellow;*/
+  		background-color: wheat;
+  	}
+
+  </style>
 </head>
 <body>
 	<%= render :partial => 'layouts/menu'%>
 	<div  class="container">
 		<%= yield %>
 	</div>
-
+	<script type="text/javascript">$('.carousel').carousel()</script>
 </body>
 </html>

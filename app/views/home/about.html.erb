@@ -1,4 +1,49 @@
-<h2>Helo Uganda</h2>
+<div class="row">
+	<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0"
+				class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<%= image_tag("photo.jpg", size: "665x450")%>	
+				</div>
+				
+				<div class="item">
+					<%= image_tag("photo2.jpg", size: "665x450")%>	
+				</div>
+			</div>
+			<a class="carousel-control left" href="#myCarousel"
+				data-slide="prev">&lsaquo;
+			</a>
+			<a class="carousel-control right" href="#myCarousel"
+				data-slide="next">&rsaquo;
+			</a>	
+		</div>
+	</div>
+	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+		<h3>Welcome to Elim Pentecostal Church</h3>
+		<p>
+			jy xdgdc dchdvj,cd dc dhec e vgnvr gvr jkuv vhrf rfjhrf rvjff rvemhr rvrjvr rvgjrv vgrjvrgv grrvjgv gmgv bvr,tmtr rtgjrt rtbvjv grbvgjbgt gtbjgrb grbjgb gbjgbg gbjgbjh gbjgbng
+		</p>
+		<H4>A word from the senior pastor</H4>
+			<div class="media">
+				<%= image_tag("photo.jpg", size: "200x150", class: "media-object pull-left")%>
+				<div class="media-body">
+					<h4 class="media-heading">Knowing Jesus</h4>
+					Phillipians 3:10 "To know him and the power of his resurrection and the fellowship of his sufferings"
+				</div>
+				
+			</div>
+		
+		
+	</div>
+</div>
+
+
+
 <%@pages.each do |p|%>
 	<p><%= p.title%></p>
 	<p><%= p.category%></p>
