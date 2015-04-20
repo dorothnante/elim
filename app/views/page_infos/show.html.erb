@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @page_info.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @page_info.category %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @page_info.description %>
+</p>
+
+<%= link_to 'Edit', edit_page_info_path(@page_info) %> |
+<%= link_to 'Back', page_infos_path %>

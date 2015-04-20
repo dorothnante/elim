@@ -1,0 +1,8 @@
+<p>
+	<% @single.each do |single|%>
+		<h1 class="well well-sm"><%= single.title%></h1>
+		<p class="well well-sm"><%= single.category%></p>
+		<p class="well well-sm"><%= single.description%></p>
+		<p><%= single.created_at%></p>
+	<%end%>
+</p>

@@ -26,6 +26,10 @@
 	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 		<h3>Welcome to Elim Pentecostal Church</h3>
 		<p>
+			<%@info.each do |info|%>
+				<%= info.title%>
+
+			<% end %>
 			This is a resting place in the Bible where the children of Israel rested after along journey in the desert, they found water and quenched their thirst and the praised the God almihty 
 		</p>
 		<H4>A word from the senior pastor</H4>
@@ -48,15 +52,19 @@
 
 <div class="row">
 	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-	<H4>Come</H4>
+	<%= image_tag("photo2.jpg", size: "200x150")%>
+	<H4>Ms.Nabakooza Vicky</H4>
 	</div>
 	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-	<H4>See</H4>
+	<%= image_tag("photo1.jpeg", size: "200x150")%>
+	<H4>Elder Maria Kiwanuka</H4>
 	</div>
 	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-	<H4>Experience</H4>
+	<%= image_tag("photo2.jpg", size: "200x150")%>
+	<H4>Mrs. Senfuka</H4>
 	</div>
 	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-	<H4>Grow in faith</H4>
+	<%= image_tag("photo1.jpeg", size: "200x150")%>
+	<H4>Mr.Ndaula Herbert</H4>
 	</div>
 </div>
