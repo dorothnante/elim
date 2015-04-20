@@ -7,7 +7,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-	<a class="navbar-brand" href="#">ELIM CHURCH</a>
+	<a class="navbar-brand" href="#">ELIM PENTECOSTAL CHURCH</a>
 	</div>
 	<div class="collapse navbar-collapse" id="doroth">
 		<ul class="nav navbar-nav"> 
@@ -15,6 +15,16 @@
 			<li class= "<%='active'if current_page?(home_contact_path)%>"><%= link_to "CONTACT", home_contact_path %></li>
 			<li class= "<%='active'if current_page?(home_activities_path)%>"><%= link_to "ACTIVITIES", home_activities_path %></li>
 			<li class= "<%='active'if current_page?(home_staff_path)%>"><%= link_to "STAFF", home_staff_path %></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"> DEPARTMENTS <b class="caret"></b>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Single department</a></li>
+							<li><a href="#"> Youth department</a></li>
+							<li><a href="#"> Women department</a></li>
+							<li><a href="#"> Men department</a></li>
+						</ul>
+					</a>
+				</li>
 		</ul>	
 	</div>
 </nav>

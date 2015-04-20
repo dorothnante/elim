@@ -8,4 +8,6 @@ class HomeController < ApplicationController
 	end
 	def staff
 	end
+	def department
+	end
 end

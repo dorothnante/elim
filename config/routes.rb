@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'home/contact'
   get 'home/activities'
   get 'home/staff'
+  get 'home/department'
 end
