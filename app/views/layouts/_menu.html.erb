@@ -25,6 +25,12 @@
 						</ul>
 					</a>
 				</li>
-		</ul>	
+		</ul>
+		<%= form_tag page_infos_path,:class=>"form-inline navbar-form", :method =>"get" do %>
+		  	<%= text_field_tag :search, params[:search], :placeholder=>"type to search...", :class=>"form-control"%>
+		  	<%= submit_tag "search", :class=>"btn btn-success btn-sm", :name => nil%>
+			
+
+		<% end %>	
 	</div>
 </nav>

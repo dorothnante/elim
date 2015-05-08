@@ -4,7 +4,11 @@ class PageInfosController < ApplicationController
   # GET /page_infos
   # GET /page_infos.json
   def index
-    @page_infos = PageInfo.all
+    if(params[:search])
+      @page_infos = PageInfo.search(params[:search])
+    else
+      @page_infos = PageInfo.all
+    end
   end
 
   # GET /page_infos/1

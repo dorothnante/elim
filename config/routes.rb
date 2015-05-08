@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :members
+
   resources :page_infos
 
   root "home#about"
